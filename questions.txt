@@ -1,0 +1,7 @@
+1. The problem studies another way to represent sequential queue. In this stratergy, to represent a queue q, we maintain internally two separate extensible arrays a1 and a2, and the enqueue operation is always done at the tail of array a2, while dequeue operation is done at the tail of a1. And if a1 is empty, we remove all elements from a2 and insert inversely into a1, and then the dequeue operation follows. For instance, at the beginning, after enqueue element 1,2,3, the array a2=[1,2,3], while a1=[]; when dequeing the queue, we find that a1 is empty, so we remove all elements from a2 and insert them into, which leaves a1=[3,2,1], a2=[]. And then the dequeue operation follows leaving a1=[3,2] and a2=[].
+
+	a.Design a data structure to represent such kind of sequential queue and then implement it. 
+	b. How to extend and shrink array a1 and a2? Do these operations must be operated on a1 and a2 simultaneously, or could be done independently?
+	c. Does this stratergy apply to linked queue? If so, implement it.
+
+2. Implement Merge sort using Stacks.

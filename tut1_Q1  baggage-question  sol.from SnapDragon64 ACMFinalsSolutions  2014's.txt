@@ -1,0 +1,15 @@
+//help from SnapDragon64 github
+int main(){
+	int T
+	while (cin>>N){
+		if (T==3){//T==3 is a trivial case, because in the 
+			cout<<"2 to -1"<<endl;
+			cout<<"5 to 2"<< endl:
+			cout<<"3 to -3"<< endl;
+				}
+		else{
+			doit(N,);			
+			}
+			}
+return 0;
+}

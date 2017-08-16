@@ -1,0 +1,57 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
+
+
+int fibo(int no){
+	int f0, f1, f4, list[no];
+	if (no ==0 or no==1) return no;
+	list[0] = 0;
+ 	list[1] = 1;
+	for (int j =2; j<no; j++){
+		int str_f0, str_f1, len0, len1, temp;
+		f0 = list[j-2];
+		f1 = list[j-1];
+		//f3 = len_of_f0 * f1 + f0;
+		str_f0 = string(f0);
+		str_f1 = string(f1);
+		len0 = str_f0.length();
+		len1 = str_f1.length();
+		temp = len0 * f1 + f0;
+		list[j] = temp;
+		}
+	return temp[no];
+	} 
+
+int func(int num, int ptrn){ //this calls another function - fibo to get nth index no. in series
+	int no, check;
+	no = fibo(num);
+	c = 0;
+	pat = ptrn; //pattern 
+	temp = no; //nth no. in the series
+	
+	while (string(temp).length() > string(pat).length){
+		check = temp%(pow(10, string(pat).length() ));
+		if (check = pat)c++;
+		temp = temp/10;
+	}
+}	
+			
+
+int main(){
+	int test, inte, pat;
+	cin>>test;
+	inte[100];
+	pat[100];
+	for (int i=0; i<test; i++){
+		cin>>inte[i];
+		cin>>par[i];
+	//output loop
+	for (int i =0; i<test; i++){
+		int val = func(inte[i], par[i]); //here a function named func is used 
+		cout<<val;
+	}
+	}
+	return 0;
+}
